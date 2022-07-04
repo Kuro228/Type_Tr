@@ -1,0 +1,34 @@
+﻿<Window x:Class="Type_Tr.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Type_Tr"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Dot 1:" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Height="33" Width="51" FontSize="16"/>
+        <TextBox x:Name="x1" HorizontalAlignment="Left" Margin="66,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" FontSize="16"/>
+        <Label Content="Dot 2:" HorizontalAlignment="Left" Margin="10,87,0,0" VerticalAlignment="Top" Height="33" Width="51" FontSize="16"/>
+        <Label Content="Dot 3:" HorizontalAlignment="Left" Margin="10,137,0,0" VerticalAlignment="Top" Height="33" Width="51" FontSize="16"/>
+        <Button Content="Построить" HorizontalAlignment="Left" Margin="10,178,0,0" VerticalAlignment="Top" FontSize="18" Height="40" Width="176" Click="Button_Click"/>
+        <Canvas x:Name="canvas" Margin="200,0,0,150" Width="600" Height="300" />
+        <Button Content="Определить" HorizontalAlignment="Left" Margin="10,222,0,0" VerticalAlignment="Top" FontSize="18" Height="40" Width="176" Click="Button_Click_1"/>
+        <TextBox x:Name="y1" HorizontalAlignment="Left" Margin="126,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" FontSize="16"/>
+        <TextBox x:Name="x2" HorizontalAlignment="Left" Margin="66,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" FontSize="16"/>
+        <TextBox x:Name="y2" HorizontalAlignment="Left" Margin="126,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" FontSize="16"/>
+        <TextBox x:Name="x3" HorizontalAlignment="Left" Margin="66,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" FontSize="16"/>
+        <TextBox x:Name="y3" HorizontalAlignment="Left" Margin="126,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" FontSize="16"/>
+        <Label x:Name="L1" Content="Остроугольный" HorizontalAlignment="Left" Margin="10,334,0,0" VerticalAlignment="Top" FontSize="14" Width="164" Height="37"/>
+        <Label x:Name="L2" Content="Тупоугольный" HorizontalAlignment="Left" Margin="10,375,0,0" VerticalAlignment="Top" FontSize="14" Width="164" Height="37"/>
+        <Label x:Name="L3" Content="Прямоугольный" HorizontalAlignment="Left" Margin="224,334,0,0" VerticalAlignment="Top" FontSize="14" Width="171" Height="37"/>
+        <Label x:Name="L4" Content="Равнобедренный" HorizontalAlignment="Left" Margin="218,375,0,0" VerticalAlignment="Top" FontSize="14" Height="37" Width="182"/>
+        <Label x:Name="L5" Content="Равносторонний" HorizontalAlignment="Left" Margin="466,334,0,0" VerticalAlignment="Top" FontSize="14" Height="37" Width="177"/>
+        <Label x:Name="L6" Content="Разносторонний" HorizontalAlignment="Left" Margin="467,375,0,0" VerticalAlignment="Top" FontSize="14" Height="37" Width="176"/>
+        <Label x:Name="L7" Content="Египетский" HorizontalAlignment="Left" Margin="679,334,0,0" VerticalAlignment="Top" FontSize="14" Height="37" Width="123"/>
+        <TextBox x:Name="lenght_a" HorizontalAlignment="Left" Margin="10,267,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="51"/>
+        <TextBox x:Name="lenght_b" HorizontalAlignment="Left" Margin="72,267,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="51"/>
+        <TextBox x:Name="lenght_c" HorizontalAlignment="Left" Margin="135,267,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="51"/>
+
+    </Grid>
+</Window>
