@@ -92,39 +92,24 @@ namespace Type_Tr
             betta = Math.Truncate(((Math.Acos((a * a + c * c - b * b) / (2 * a * c)) * 180)) / Math.PI);
             gamma = Math.Truncate(((Math.Acos((a * a + b * b - c * c) / (2 * a * b)) * 180)) / Math.PI);
 
-         
+            L1.Foreground = Brushes.Black;
+            L2.Foreground = Brushes.Black;
+            L3.Foreground = Brushes.Black;
+            L4.Foreground = Brushes.Black;
+            L5.Foreground = Brushes.Black;
+            L6.Foreground = Brushes.Black;
+            L7.Foreground = Brushes.Black;           
+
             if (a < (b + c) && b < (a + c) && c < (a + b))
             {
-                if ((alpha == 90) || (betta == 90) || (gamma == 90))
-                {
-                    L3.Foreground = Brushes.Red;//прямоугольный 
-                    L2.Foreground = Brushes.Black;
-                    L1.Foreground = Brushes.Black;
-                }
-                else if ((alpha > 90) || (betta > 90) || (gamma > 90))
-                {
-                    L2.Foreground = Brushes.Red;//тупоугольный 
-                    L1.Foreground = Brushes.Black;
-                    L3.Foreground = Brushes.Black;
-                }
-                else
-                {
-                    L1.Foreground = Brushes.Red;//остроугольный 
-                    L2.Foreground = Brushes.Black;
-                    L3.Foreground = Brushes.Black;
-                }
-                if ((a == b) && (a == c) && (b == c))
-                {
-                    L5.Foreground = Brushes.Red;//равносторонний 
-                    L6.Foreground = Brushes.Black;
-                }
-                else
-                {
-                    L6.Foreground = Brushes.Red;//разносторонний 
-                    L5.Foreground = Brushes.Black;
-                }
+                if ((alpha == 90) || (betta == 90) || (gamma == 90)) L3.Foreground = Brushes.Red;//прямоугольный 
+                else if ((alpha > 90) || (betta > 90) || (gamma > 90)) L2.Foreground = Brushes.Red;//тупоугольный 
+                else L1.Foreground = Brushes.Red;//остроугольный 
+                   
+                if ((a == b) && (a == c) && (b == c))L5.Foreground = Brushes.Red;//равносторонний 
+                else L6.Foreground = Brushes.Red;//разносторонний 
+
                 if ((alpha == betta) || (alpha == gamma) || (betta == gamma)) L4.Foreground = Brushes.Red;
-                else L4.Foreground = Brushes.Black;
 
                 if (a % 3 == 0)
                 {
@@ -142,7 +127,7 @@ namespace Type_Tr
                     if (b % 3 == 0 && c % 4 == 0) L7.Foreground = Brushes.Red;
                     if (c % 3 == 0 && b % 4 == 0) L7.Foreground = Brushes.Red;
 
-                }else L7.Foreground = Brushes.Black;
+                }
             }
             
         }
